@@ -10,7 +10,7 @@ async function getProducts(): Promise<ProductResponse[]> {
 export default async function ProductList() {
     const products = await getProducts();
     return (
-        <div className="container mx-auto py-12 px-4">
+        <div className="container py-12 px-4 h-[90vh] overflow-auto">
             <h1 className="text-3xl font-bold mb-2">Our Products</h1>
             <p className="text-muted-foreground mb-8">Discover our collection of high-quality products</p>
 
