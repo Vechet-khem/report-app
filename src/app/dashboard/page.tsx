@@ -1,8 +1,11 @@
+import { redirect } from 'next/navigation';
+
 export default function Page() {
-    return (
-        <div className="p-4">
-            <h1>Dashboard</h1>
-            <p>Welcome to the dashboard!</p>
-        </div>
-    );
+    const userId = true;
+
+    if (!userId) {
+        return redirect('/login');
+    } else {
+        redirect('/dashboard/overview');
+    }
 }
