@@ -5,7 +5,7 @@ export default async function Page() {
     const userId = true;
 
     if (!userId) {
-        return redirect('/auth/sign-in');
+        return redirect('/login');
     } else {
         redirect('/dashboard/overview');
     }
