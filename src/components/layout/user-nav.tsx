@@ -14,10 +14,10 @@ import { UserAvatarProfile } from '@/components/user-avatar-profile';
 import { useRouter } from 'next/navigation';
 export function UserNav() {
     const user = {
-        imageUrl: "/user-default.jpg",
-        fullName: "Chhaya",
+        imageUrl: "/RTR-LOGO.png",
+        fullName: "Vechet",
         emailAddresses: [
-            { emailAddress: "it.chhaya@gmail.com" }
+            { emailAddress: "vechetkhem21@gmail.com" }
         ]
     }
     const router = useRouter();

@@ -159,9 +159,9 @@ export default function AppSidebar() {
                                         showInfo
                                         user={{
                                             imageUrl: "/RTR-LOGO.png",
-                                            fullName: "Chhaya",
+                                            fullName: "Vechet",
                                             emailAddresses: [
-                                                { emailAddress: "it.chhaya@gmail.com" }
+                                                { emailAddress: "vechetkhem21@gmail.com" }
                                             ]
                                         }}
                                     />
