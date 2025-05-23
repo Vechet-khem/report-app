@@ -127,6 +127,7 @@ export default function AppSidebar() {
                                     </SidebarMenuItem>
                                 </Collapsible>
                             ) : (
+
                                 <SidebarMenuItem key={item.title}>
                                     <SidebarMenuButton
                                         asChild
