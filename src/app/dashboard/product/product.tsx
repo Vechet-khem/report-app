@@ -20,9 +20,10 @@ export default function Product({
     return (
         <div key={id} className="border rounded-lg overflow-hidden group hover:shadow-md transition-shadow">
             <div className="relative aspect-square overflow-hidden bg-gray-100">
-                <img
+                <Image
                     src={images[0] || "/placeholder.svg"}
                     alt={title}
+                    fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
             </div>

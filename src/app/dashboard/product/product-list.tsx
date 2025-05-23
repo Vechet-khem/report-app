@@ -1,5 +1,14 @@
 import { Button } from "@/components/ui/button";
-import Product, { ProductResponse } from "./product";
+// import Product, { ProductResponse } from "./product";
+import Image from "next/image";
+
+type ProductResponse = {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    images: string[];
+};
 
 async function getProducts(): Promise<ProductResponse[]> {
     const response = await fetch("https://dummyjson.com/products");
@@ -23,9 +32,11 @@ export default async function ProductList() {
                     {products.map((product) => (
                         <div key={product.id} className="border rounded-lg overflow-hidden group hover:shadow-md transition-shadow">
                             <div className="relative aspect-square overflow-hidden bg-gray-100">
-                                <img
+                                <Image
                                     src={product.images[0] || "/placeholder.svg"}
                                     alt={product.title}
+                                    width={300}
+                                    height={300}
                                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
